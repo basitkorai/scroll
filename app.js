@@ -23,11 +23,10 @@ navToggle.addEventListener("click", () => {
 });
 
 // ********** fixed navbar ************
-const navbar = document.querySelector("#nav");
-const navbarHeight = navbar.getBoundingClientRect().height;
-
 
 window.addEventListener("scroll", () => {
+  const navbar = document.querySelector("#nav");
+  const navbarHeight = navbar.getBoundingClientRect().height;
   const scrollHeight = window.pageYOffset;
   if (scrollHeight > navbarHeight) {
     navbar.classList.add("fixed-nav");
