@@ -336,6 +336,7 @@ header {
 #services,
 #tours {
   height: 80vh;
+  padding: 3rem;
 }
 #services {
   background: var(--clr-white);
